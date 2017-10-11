@@ -3,16 +3,15 @@
   
   <!--This ANT build takes MoEML data and turns it into triples. These build steps are meant 
       to be integrated into the MoEML site when appropriate-->
-    
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
     
     <target name="getMoEMLData">
         <!--Get the zip data file-->
         <get src="http://jenkins.hcmc.uvic.ca/job/MoEML/lastSuccessfulBuild/artifact/static/site/*zip*/site.zip" usetimestamp="yes" dest="site.zip"/>
-        
         <unzip src="site.zip" dest="site">
             <cutdirsmapper dirs="1"/>
         </unzip>
-        
+        <delete file="site.zip"/>
     </target>
     
     
