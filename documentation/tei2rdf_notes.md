@@ -25,6 +25,21 @@ One proposed workflow:
 1. What is more useful: to have a gazetteer that has EVERYTHING in it (each place, and each place's coordiantes, rsps, etc) with each page's RDF representation just being a snippet from the gazetter? Or should each page's RDF representation offer more than what you could get from aggregating?
 
 
+**Note for JT**: Don't use the gazetteer file because it's more a display file than anything (and it has too much data, I think). Use the spelling variants file.
+
+The TEI RDF stylesheets haven't been worked on since 2014, but it looks as though there was some use of `<equiv/>` for mapping TEI elements to CRM metadata. This might be a very well documented way of doing this, but I doubt it's extensible.
+
+The TEI RDF stylesheets also don't have any way of handling `<listRelation/>`, which would likely be something helpful to create. 
+
+Sample `<listRelation>`:
+
+```
+<listRelation>
+<relation ref="http://www.geonames.org/ontology/documentation.html#alternateName"
+ mutual="http://mapoflondon.uvic.ca/ABBE2.htm http://mapoflondon.uvic.ca/spelling_variants.htm#spelling_variants_ABBE2_1"/>            </listRelation>
+```
+
+This should be fairly simple to produce into an RDF triple. A strategy for *Endings* might be to create anything we want into triples into `<listRelation>` and then have a fairly portable (if possible) way of creating `<listRelation>` into RDF.
 
 ## Bibliography
 

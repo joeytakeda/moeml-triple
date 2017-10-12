@@ -14,5 +14,31 @@
         <delete file="site.zip"/>
     </target>
     
+    <target name="init">
+        <delete dir="src"/>
+        <mkdir dir="src"/>
+        <mkdir dir="src/original"/>
+        <mkdir dir="src/standard"/>
+        <mkdir dir="src/standalone"/>
+
+    </target>
+    <target name="getVariants">
+        <echo message="Getting variant spellings..."/>
+        <get src="http://jenkins.hcmc.uvic.ca/job/MoEML/lastSuccessfulBuild/artifact/static/site/xml/original/spelling_variants.xml" usetimestamp="yes" dest="src/original/spelling_variants.xml"/>
+        <get src="http://jenkins.hcmc.uvic.ca/job/MoEML/lastSuccessfulBuild/artifact/static/site/xml/standard/spelling_variants.xml" usetimestamp="yes" dest="src/standard/spelling_variants.xml"/>
+        <get src="http://jenkins.hcmc.uvic.ca/job/MoEML/lastSuccessfulBuild/artifact/static/site/xml/standalone/spelling_variants.xml" usetimestamp="yes" dest="src/standalone/spelling_variants.xml"/>
+       
+    </target>
+    
+    <target name="varToRdf">
+        <echo message="Transforming standalone variants to RDF..."/>
+        <java classname="net.sf.saxon.Transform" classpath="utilities/saxon9he.jar">
+            <arg value="-s:src/original/spelling_variants.xml"/>
+            <arg value="-o:src/original/spelling_variants_rdf.xml"/>
+            <arg value="-xsl:xsl/gaz2listRelation.xsl"/>
+            <arg value="--suppressXsltNamespaceCheck:on"/>
+        </java>
+    </target>
+    
     
 </project>
