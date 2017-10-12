@@ -41,6 +41,26 @@ Sample `<listRelation>`:
 
 This should be fairly simple to produce into an RDF triple. A strategy for *Endings* might be to create anything we want into triples into `<listRelation>` and then have a fairly portable (if possible) way of creating `<listRelation>` into RDF.
 
+This thread throws a bit of a monkey wrench in the `<listRelation>` plan: https://github.com/TEIC/TEI/issues/504. To summarize: `<relation>` should only be used for people-like relationships (married, children, etc). One should use `<arc>` and other graph/node like elements. More research to do here. This is a long conversation that follows up on #504: https://listserv.brown.edu/archives/cgi-bin/wa?A2=TEI-L;8c28af83.1604. To summarize: it's a question of what exactly we're trying to do, to whom will this be useful (or extensible), and where does this sort of work go? Are we just trying to create RDF or prototype a form of TEI-->RDF translation that is generic (I don't think so, at least). Or are we wanting to show that it can be done? 
+
+TEI guidelines for Graphs and Trees (`<arc>`, `<node>`, etc), specifically the section on Family Trees: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/GD.html#GDFT 
+
+If we are to encode using Graphs and Trees, here's a very sketchy sample encoding, using the same example from `<listRelation>`. I *think* this would be how you could encode this using the graph system.
+
+```
+<graph>
+               <node xml:id="ABBE2_graph1_origin" corresp="http://mapoflondon.uvic.ca/ABBE2.htm">
+                  <label>Abchurch Lane</label>
+               </node>
+               <node xml:id="ABBE2_graph1_1" corresp="http://mapoflondon.uvic.ca/spelling_variants.htm#spelling_variants_ABBE2_1">
+                  <label>Abchvch Lane</label>
+               </node>
+               <arc from="#ABBE2_graph1_1" to="#ABBE2_graph1_origin" corresp="http://www.geonames.org/ontology/documentation.html#alternateName">
+                  <label>Alternate Name</label>
+               </arc>
+            </graph>
+```
+
 ## Bibliography
 
 https://jtei.revues.org/1480
