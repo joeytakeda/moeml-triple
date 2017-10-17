@@ -45,7 +45,7 @@ This thread throws a bit of a monkey wrench in the `<listRelation>` plan: https:
 
 TEI guidelines for Graphs and Trees (`<arc>`, `<node>`, etc), specifically the section on Family Trees: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/GD.html#GDFT 
 
-If we are to encode using Graphs and Trees, here's a very sketchy sample encoding, using the same example from `<listRelation>`. I *think* this would be how you could encode this using the graph system.
+If we are to encode using Graphs and Trees, here's a very sketchy sample encoding, using the same example from `<listRelation>`. I *think* this would be how you encode this using the graph system.
 
 ```
 <graph>
