@@ -61,6 +61,59 @@ If we are to encode using Graphs and Trees, here's a very sketchy sample encodin
             </graph>
 ```
 
+## Notes (Oct 22)
+
+There are some TEI-->RDF conversions, but I don't think it is ever feasible or advisable for their to be a TEI --> RDF conversion. Take, for example, MoEML's attribution of authorship of a document:
+
+```
+<respStmt>
+<resp ref="molresp:aut">Author</resp>
+<name ref="mol:JENS1">Janelle Jenstad</name>
+</respStmt>
+```
+
+But an identical (or at least, nearly) way of saying this in valid TEI:
+
+
+```
+<respStmt>
+<resp>Author</resp>
+<name>Janelle Jenstad</name>
+</respStmt>
+
+```
+
+or
+
+```
+<author ref="PERS1.xml#JENS1" corresp="molresp:aut">Janelle Jenstad</author>
+```
+
+All of this is valid TEI but there's no way to know if the project uses formal responsibility taxonomies, the level of granularity of their data, etc.
+
+There are some attributes in TEI that have a "LOD" feel to them, particularly `@sameAs`, `@corresp`, etc. But I don't think those are helpful in our case, since we'd want to be more specific and link to a formal ontology (AFAIK, TEI doesn't count as an LOD ontology, does it?)
+
+I am slightly confused, though, at whether we want our gazetteer to be output in RDF (which is a simpler task) or if we want an RDF rendering of each document (a weighter task).
+
+The second task, particularly if we want to have an RDF representation of each document, is to reckon what data we have currently in our documents and what data we want to capture. 
+
+What we have:
+
+| Document Type | TEI | RDF  |
+| ------------- |:-------------:| -----:|
+| All   | TEI              | |
+| All   | teiHeader        | |
+| All   | fileDesc         | |
+| All   | titleStmt        | |
+| All   | title            | |
+| All   | respStmt         | |
+| All   | publicationStmt  | |
+| All   | titleStmt/title  | |
+| All   | revisionDesc     | |
+| All   | sourceDesc       | |
+| All   |  text/body       | |
+
+
 ## Bibliography
 
 https://jtei.revues.org/1480
