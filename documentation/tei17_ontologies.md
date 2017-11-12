@@ -71,5 +71,89 @@
 
 So, our URIs should keyed to an older version, perhaps? A date or an edition number?
 
+## The Principle of Entropy Fallacy
 
+* Increased amount of data = increase of amount of information
+* Increased interlinking = increased information
 
+## Data Integration
+
+* Information is generated through eclusion using meaningful distictions
+* Linked data can function as a medium for generating meaningful statements about data
+
+## Ontology
+
+* conceptual model: a formally defined model resulting from an analysis of a specific domain
+* the design of a conceptual model is in itself a scholarly activity
+* Combining existing ontologies uncritically makes connections that could be fallacious
+* Formalized knowledge
+* Clearly defined
+   * Concepts
+   * Relationships
+* Processed by machines *and* people
+
+### Conceptualization
+
+* Arena 
+* Purpose
+* Intention
+   * Identity
+   * Substance
+   * Unity
+   * Existence
+* Potential
+
+## Classes
+
+* Category of items that have common traits; defined by a scope note, describing the intention
+* Individual items are "instances" not concepts
+* "Open" set
+   * Open World
+   * Extension
+* Scientific realism
+
+## CRM-method Properties
+
+* Relationship between two classes
+   * Defined by scope note
+   * Intention
+* Domain and Range
+   * Arbitrary choice
+   * Bi-directional
+* Properties of properties
+   * Allows typing
+
+## Types of relationships
+
+* Identification of items by names
+* Observation and classification
+* Part-decomposition
+   * Objects, periods and places
+* Participation of persistent items in temporal entities
+   * creates a nation of history
+* Location
+   * periods in space-time
+   * physical objects in space
+* Influence of
+   * objects on activities
+   * activites on objects
+* Reference of information objects
+   * to anything
+
+Would each "place" be a concept (similar to the idea of a "work") that exists under various names at various times? 
+
+## Multiple Instantiation
+
+* Items needs more classes
+   * Animal, Vegetable, Mineral
+       * Wooden handled iron knife with bone inlay
+* Museum gains object
+   * E8 Acquisition
+   * E9 Move
+   * E10 Transfer of Custody
+   
+## What is a place
+
+* A place is an extent in space, determined diachronically with regard to a larger, persistent constellation of matter, often continents by coordinates, geophysical features, aretfacts ... not identical to:
+* A CRM Place is not a landscape, not a set -- it is an abstraction from temporal changes
+* A means to reason about the "where" in multiple reference systems
