@@ -1,0 +1,596 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">place</label>
+   </E55_Type>
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place/placeName">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">contains an absolute or relative place name.  [13.2.3. ]</label>
+      <P127_has_broader_term rdf:resource="http://www.tei-c.org/type/place"/>
+   </E55_Type>
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place/bloc">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">(bloc) contains the name of a geo-political unit consisting of two or more nation states or
+    countries. [13.2.3. ]</label>
+      <P127_has_broader_term rdf:resource="http://www.tei-c.org/type/place"/>
+   </E55_Type>
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place/country">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">(country) contains the name of a geo-political unit, such as a nation, country, colony, or
+    commonwealth, larger than or administratively superior to a region and smaller than a bloc. [13.2.3. ]</label>
+      <P127_has_broader_term rdf:resource="http://www.tei-c.org/type/place"/>
+   </E55_Type>
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place/region">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">contains the name of an administrative unit such as a state, province, or county, larger
+    than a settlement, but smaller than a country. [13.2.3. ]</label>
+      <P127_has_broader_term rdf:resource="http://www.tei-c.org/type/place"/>
+   </E55_Type>
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place/district">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit. [13.2.3. ]</label>
+      <P127_has_broader_term rdf:resource="http://www.tei-c.org/type/place"/>
+   </E55_Type>
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place/settlement">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">contains the name of a settlement such as a city, town, or village identified as a single geo-political or administrative unit. [13.2.3. ]</label>
+      <P127_has_broader_term rdf:resource="http://www.tei-c.org/type/place"/>
+   </E55_Type>
+   <E55_Type xmlns="http://purl.org/NET/crm-owl#"
+             rdf:about="http://www.tei-c.org/type/place/geogName">
+      <label xmlns="http://www.w3.org/2000/01/rdf-schema#">(geographical name) identifies a name associated with some geographical feature such as Windrush Valley or Mount Sinai. [13.2.3. ]</label>
+      <P127_has_broader_term rdf:resource="http://www.tei-c.org/type/place"/>
+   </E55_Type>
+   <F24_Publication_Expression xmlns="http://purl.org/NET/crm-owl#">
+      <R24i_was_created_through rdf:resource="http://www.example.com/place/LOMB1 http://www.example.com/place/CAND1 http://www.example.com/place/CAND2 http://www.example.com/place/LANG1 http://www.example.com/place/STMA27 http://www.example.com/place/TOWE3 http://www.example.com/place/ROYA1"/>
+   </F24_Publication_Expression>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/CHER1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/CHER1">
+            <rdf:value>Melanie Chernyk Melanie Chernyk MJC</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/JENS1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/JENS1">
+            <rdf:value>Janelle Jenstad Janelle Jenstad JJ</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/LAND2">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/LAND2">
+            <rdf:value>Tye Landels-Gruenewald Tye Landels-Gruenewald TLG</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/MCFI1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/MCFI1">
+            <rdf:value>Kim McLean-Fiander Kim McLean-Fiander KMF</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>Cultures of Knowledge</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>Early Modern Letters Online</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>EMLO</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>WEMLO</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/TAKE1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/TAKE1">
+            <rdf:value>Joey Takeda Joey Takeda JT</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/ARNL1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/ARNL1">
+            <rdf:value>Stewart Arneil Stewart Arneil</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/HOLM3">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/HOLM3">
+            <rdf:value>Martin D. Holmes Martin D. Holmes MDH</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/GIBB1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/GIBB1">
+            <rdf:value>Grinling Gibbons Grinling Gibbons</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+      <P98i_was_born>
+         <E67_Birth>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E67_Birth>
+      </P98i_was_born>
+      <P100i_died_in>
+         <E69_Death>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E69_Death>
+      </P100i_died_in>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>ODNB</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>Wikipedia</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/LLOY1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/LLOY1">
+            <rdf:value>Edward Lloyd Edward Lloyd</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+      <P98i_was_born>
+         <E67_Birth>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E67_Birth>
+      </P98i_was_born>
+      <P100i_died_in>
+         <E69_Death>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E69_Death>
+      </P100i_died_in>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>ODNB</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/POPE1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/POPE1">
+            <rdf:value>Alexander Pope Alexander Pope</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+      <P98i_was_born>
+         <E67_Birth>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E67_Birth>
+      </P98i_was_born>
+      <P100i_died_in>
+         <E69_Death>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E69_Death>
+      </P100i_died_in>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>ODNB</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>Wikipedia</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/SWIF1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/SWIF1">
+            <rdf:value>Jonathan Swift Jonathan Swift</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+      <P98i_was_born>
+         <E67_Birth>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E67_Birth>
+      </P98i_was_born>
+      <P100i_died_in>
+         <E69_Death>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E69_Death>
+      </P100i_died_in>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>ODNB</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>Wikipedia</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>BAE</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/WEBS1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/WEBS1">
+            <rdf:value>John Webster John Webster</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+      <P98i_was_born>
+         <E67_Birth>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E67_Birth>
+      </P98i_was_born>
+      <P100i_died_in>
+         <E69_Death>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E69_Death>
+      </P100i_died_in>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>ODNB</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>Wikipedia</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>BAE</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/WELL1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/WELL1">
+            <rdf:value>Mother Wells Mother Wells</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+   </E21_Person>
+   <E21_Person xmlns="http://purl.org/NET/crm-owl#"
+               rdf:about="http://www.example.com/person/WREN1">
+      <P131_is_identified_by>
+         <E82_Actor_Appellation rdf:about="http://www.example.com/persname/WREN1">
+            <rdf:value>Christopher Wren Christopher Wren</rdf:value>
+         </E82_Actor_Appellation>
+      </P131_is_identified_by>
+      <P98i_was_born>
+         <E67_Birth>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E67_Birth>
+      </P98i_was_born>
+      <P100i_died_in>
+         <E69_Death>
+            <P4_has_time-span>
+               <E52_Time-Span>
+                  <P82_at_some_time_within>
+                     <E61_Time_Primitive>
+                        <rdf:value/>
+                     </E61_Time_Primitive>
+                  </P82_at_some_time_within>
+               </E52_Time-Span>
+            </P4_has_time-span>
+         </E69_Death>
+      </P100i_died_in>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>ODNB</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+      <P102_has_title>
+         <E35_Title>
+            <rdf:value>Wikipedia</rdf:value>
+         </E35_Title>
+      </P102_has_title>
+   </E21_Person>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>MoEML</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <E31_Document xmlns="http://purl.org/NET/crm-owl#"
+                 rdf:about="http://mapoflondon.uvic.ca/includes.xml">
+      <F24_Publication_Expression>
+         <R24i_was_created_through rdf:resource="http://www.example.com/place/LOMB1 http://www.example.com/place/CAND1 http://www.example.com/place/CAND2 http://www.example.com/place/LANG1 http://www.example.com/place/STMA27 http://www.example.com/place/TOWE3 http://www.example.com/place/ROYA1"/>
+      </F24_Publication_Expression>
+   </E31_Document>
+   <P102_has_title xmlns="http://purl.org/NET/crm-owl#">
+      <E35_Title>
+         <rdf:value>Northward Ho</rdf:value>
+      </E35_Title>
+   </P102_has_title>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/LOMB1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/LOMB1">
+            <rdf:value>Lombard Street</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/CAND1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/CAND1">
+            <rdf:value>Candlewick Street</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/CAND2">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/CAND2">
+            <rdf:value>Candlewick Street Ward</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/LANG1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/LANG1">
+            <rdf:value>Langbourn Ward</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/STMA27">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/STMA27">
+            <rdf:value>St. Mary, Abchurch</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/TOWE3">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/TOWE3">
+            <rdf:value>Tower Street</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/ROYA1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/ROYA1">
+            <rdf:value>Royal Exchange</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/LOMB1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/LOMB1">
+            <rdf:value>Lombard Street</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/CAND1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/CAND1">
+            <rdf:value>Candlewick Street</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/CAND2">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/CAND2">
+            <rdf:value>Candlewick Street Ward</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/LANG1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/LANG1">
+            <rdf:value>Langbourn Ward</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/STMA27">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/STMA27">
+            <rdf:value>St. Mary, Abchurch</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/TOWE3">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/TOWE3">
+            <rdf:value>Tower Street</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/ROYA1">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/ROYA1">
+            <rdf:value>Royal Exchange</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+   </E53_Place>
+   <E53_Place xmlns="http://purl.org/NET/crm-owl#"
+              rdf:about="http://www.example.com/place/abchurchlane">
+      <P87_is_identified_by>
+         <E48_Place_Name rdf:about="http://www.example.com/placename/abchurchlane">
+            <rdf:value>Abchurch Lane</rdf:value>
+         </E48_Place_Name>
+      </P87_is_identified_by>
+      <P87_is_identified_by>
+         <E47_Place_Spatial_Coordinates rdf:about="http://www.example.com/placecoords/w1048041ab2b5b3b1b3b1b3b1">
+            <rdf:value>51.51209690109405,-0.08773945715900788 51.51235891239416,-0.08749603624695183 51.51262667133795,-0.08728524229368352</rdf:value>
+         </E47_Place_Spatial_Coordinates>
+      </P87_is_identified_by>
+      <P87_is_identified_by>
+         <E47_Place_Spatial_Coordinates rdf:about="http://www.example.com/placecoords/w1048041ab2b5b3b1b3b1b3b3">
+            <rdf:value>51.51125619286238,-0.0883807249651244 51.51159518259738,-0.08812560207860246 51.51195508204328,-0.08782160420778685</rdf:value>
+         </E47_Place_Spatial_Coordinates>
+      </P87_is_identified_by>
+      <P87_is_identified_by>
+         <E47_Place_Spatial_Coordinates rdf:about="http://www.example.com/placecoords/w1048041ab2b5b3b1b3b1b5b1">
+            <rdf:value>51.5123897,-0.0875297</rdf:value>
+         </E47_Place_Spatial_Coordinates>
+      </P87_is_identified_by>
+   </E53_Place>
+</rdf:RDF>
